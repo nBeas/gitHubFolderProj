@@ -20,15 +20,15 @@ char character(char start, int offset) {
 
 int main() {
 
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 3; i++) {        //creates multiple tests
         try {
-            cout << character('b',-i) << endl;
+            cout << character('b',-i) << endl;        //should provide an b, a, and an invalidRangeException
         }   catch (invalid_argument &e) {
             cout << e.what() << endl;
         }
     }
     try {
-        cout << character('!',5) << endl;
+        cout << character('!',5) << endl;        //should provide an invalidCharecterException
     }   catch (invalid_argument &e) {
         cout << e.what() << endl;
     }
