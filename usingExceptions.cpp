@@ -26,7 +26,7 @@ char character(char start, int offset) {
 
 int main() {
 
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 3; i++) {        //should display a b, a, and then show an error for invalid range
         try {
             cout << character('b',-i) << endl;
         }   catch (invalid_argument &e) {
@@ -34,7 +34,7 @@ int main() {
         }
     }
     try {
-        cout << character('!',5) << endl;
+        cout << character('!',5) << endl;        //should display an error for invalid character
     }   catch (invalid_argument &e) {
         cout << e.what() << endl;
     }
