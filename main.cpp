@@ -16,5 +16,11 @@ int half<int>(int value) {
 
 int main()
 {
+    cout << half(5.6f) << endl;     //should give 2.8
+    int i = 5;
+    cout << half(i) << endl;        //should give 3
+
+    double dub = 5.3;
+    cout << half(dub) << endl;       //should give 2.65
 
 }
